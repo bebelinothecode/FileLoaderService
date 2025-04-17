@@ -1,4 +1,4 @@
-package com.IsaacDickson.PIACProject;
+package com.IsaacDickson.PIACProject.FolderMonitorService.Entity;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
