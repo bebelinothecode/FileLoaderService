@@ -1,9 +1,13 @@
 package com.IsaacDickson.PIACProject.FolderMonitorService.Entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import static jakarta.persistence.GenerationType.IDENTITY;
 
+@Setter
+@Getter
 @Entity
 @Table(name = "cdr_logs")
 
@@ -61,51 +65,4 @@ public class CDRLogsControlTable {
                 '}';
     }
 
-    public int getID() {
-        return ID;
-    }
-
-    public void setID(int ID) {
-        this.ID = ID;
-    }
-
-    public String getFileName() {
-        return FileName;
-    }
-
-    public void setFileName(String fileName) {
-        FileName = fileName;
-    }
-
-    public int getUploadStartTime() {
-        return UploadStartTime;
-    }
-
-    public void setUploadStartTime(int uploadStartTime) {
-        UploadStartTime = uploadStartTime;
-    }
-
-    public int getUploadEndTime() {
-        return UploadEndTime;
-    }
-
-    public void setUploadEndTime(int uploadEndTime) {
-        UploadEndTime = uploadEndTime;
-    }
-
-    public int getNumOfSuccessfullyLoadedRecords() {
-        return NumOfSuccessfullyLoadedRecords;
-    }
-
-    public void setNumOfSuccessfullyLoadedRecords(int numOfSuccessfullyLoadedRecords) {
-        NumOfSuccessfullyLoadedRecords = numOfSuccessfullyLoadedRecords;
-    }
-
-    public int getNumOfFailedRecords() {
-        return NumOfFailedRecords;
-    }
-
-    public void setNumOfFailedRecords(int numOfFailedRecords) {
-        NumOfFailedRecords = numOfFailedRecords;
-    }
 }
