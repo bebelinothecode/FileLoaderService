@@ -115,6 +115,6 @@ public class CallDetailRecords {
     @Column(name = "USSD_STRING")
     private String ussdString;
 
-    @Column(name = "REFERENCE_ID", nullable = false) // The field you already had in DB
+    @Column(name = "REFERENCE_ID", nullable = false)
     private String referenceID;
 }
